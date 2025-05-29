@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NB Usinagem</title>
+    <style>
+        body { margin: 0; font-family: 'Segoe UI', sans-serif; background-color: #f8f8f8; color: #333; }
+        header { background: #ffffff; padding: 10px 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); display: flex; align-items: center; justify-content: space-between; }
+        header img { height: 60px; }
+        nav a { margin: 0 15px; text-decoration: none; color: #222; font-weight: 500; }
+        .hero { background: #1b1b1b; color: white; padding: 60px 20px; text-align: center; }
+        .hero h1 { font-size: 48px; margin-bottom: 10px; }
+        .hero p { font-size: 18px; max-width: 700px; margin: auto; }
+        section { padding: 40px 20px; max-width: 1000px; margin: auto; }
+        section h2 { font-size: 28px; color: #1b1b1b; border-bottom: 2px solid #ddd; padding-bottom: 10px; }
+        .galeria { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; }
+        .galeria img { width: 100%; max-width: 300px; border-radius: 10px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+		.galeria-servicos {display: flex; flex-wrap: wrap; justify-content: center; gap: 1px; padding-top: 1px; 	}
+        .peca { width: 100px; max-width: 100px; height: auto; border-radius: 10px; margin: 0.5%; box-shadow: 0 2px 4px rgba(0,0,0,0.1); transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        .peca:hover { transform: scale(2.0); box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); }
+		.galeria img:hover { transform: scale(2.5); z-index: 2; transition: transform 0.3s ease, box-shadow 0.3s ease; box-shadow: 0 4px 8px rgba(0,0,0,0.2); }
+        #servicos-fotos { margin-top: 4px; }
+        form { display: flex; flex-direction: column; max-width: 500px; margin: auto; }
+        input, textarea { margin: 10px 0; padding: 10px; border-radius: 5px; border: 1px solid #ccc; }
+        button { background: #1b1b1b; color: white; padding: 10px; border: none; border-radius: 5px; cursor: pointer; }
+        footer { background: #1b1b1b; color: white; padding: 20px; text-align: center; margin-top: 40px; }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="NB Usinagem Logo">
+        <nav>
+            <a href="#sobre">Sobre</a>
+            <a href="#servicos">Serviços</a>
+            <a href="#equipamentos">Equipamentos</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <h1>NB Usinagem</h1>
+        <p>Soluções em Usinagem CNC com qualidade, precisão e compromisso com o cliente</p>
+    </div>
+
+    <section id="sobre">
+        <h2>Sobre Nós</h2>
+        <p>A NB Usinagem atua com excelência na fabricação de peças técnicas por usinagem CNC, com foco em precisão, agilidade e atendimento. Nossa estrutura está preparada para atender com qualidade setores que exigem peças complexas e em materiais diversos.</p>
+    </section>
+
+    <section id="servicos">
+        <h2>Nossos Serviços</h2>
+        <ul>
+            <li>Usinagem de materiais ferrosos e não ferrosos</li>
+            <li>Fresamento, torneamento, furação e rosqueamento</li>
+            <li>Peças seriadas ou prototipagem</li>
+            <li>Atendimento técnico e personalizado</li>
+        </ul>
+    </section>
+
+    <section id="equipamentos">
+        <h2>Fotos da Estrutura</h2>
+        <div class="galeria">
+            <img src="imagens/foto1.jpg" alt="Foto 1">
+            <img src="imagens/foto2.jpg" alt="Foto 2">
+            <img src="imagens/foto3.jpg" alt="Foto 3">
+            <img src="imagens/Imagem1.jpg" alt="Foto 4">
+            <img src="imagens/Imagem2.jpg" alt="Foto 5">
+            <img src="imagens/Imagem3.jpg" alt="Foto 6">
+            <img src="imagens/Imagem4.jpg" alt="Foto 7">
+            <img src="imagens/Imagem5.jpg" alt="Foto 8">
+            <img src="imagens/Imagem6.jpg" alt="Foto 9">
+            <img src="imagens/Imagem7.jpg" alt="Foto 10">
+        </div>
+    </section>
+
+    <section id="servicos-fotos">
+        <h2>Fotos de Serviços</h2>
+        <div class="galeria-servicos">
+            <img class="peca" src="imagens/peca1.jpg" alt="Peça Usinada 1">
+            <img class="peca" src="imagens/peca2.jpg" alt="Peça Usinada 2">
+            <img class="peca" src="imagens/peca3.jpg" alt="Peça Usinada 3">
+            <img class="peca" src="imagens/peca4.jpg" alt="Peça Usinada 4">
+            <img class="peca" src="imagens/peca4.jpg" alt="Peça Usinada 4">
+			<img class="peca" src="imagens/peca4.jpg" alt="Peça Usinada 4">
+			<img class="peca" src="imagens/peca4.jpg" alt="Peça Usinada 4">
+			<img class="peca" src="imagens/peca4.jpg" alt="Peça Usinada 4">
+			<img class="peca" src="imagens/peca4.jpg" alt="Peça Usinada 4">
+			<img class="peca" src="imagens/peca4.jpg" alt="Peça Usinada 4">
+			<img class="peca" src="imagens/peca4.jpg" alt="Peça Usinada 4">
+			<img class="peca" src="imagens/peca4.jpg" alt="Peça Usinada 4">
+			<img class="peca" src="imagens/peca4.jpg" alt="Peça Usinada 4">
+			<img class="peca" src="imagens/peca4.jpg" alt="Peça Usinada 4">
+			<img class="peca" src="imagens/peca4.jpg" alt="Peça Usinada 4">
+			<img class="peca" src="imagens/peca4.jpg" alt="Peça Usinada 4">
+			<img class="peca" src="imagens/peca4.jpg" alt="Peça Usinada 4">
+			<img class="peca" src="imagens/peca4.jpg" alt="Peça Usinada 4">
+			<img class="peca" src="imagens/peca4.jpg" alt="Peça Usinada 4">
+			<img class="peca" src="imagens/peca4.jpg" alt="Peça Usinada 4">
+        </div>
+    </section>
+
+    <section id="contato">
+        <h2>Solicite um Orçamento</h2>
+        <form action="mailto:nbusinagem@gmail.com" method="POST" enctype="text/plain">
+            <input type="text" name="nome" placeholder="Seu nome" required>
+            <input type="email" name="email" placeholder="Seu e-mail" required>
+            <textarea name="mensagem" placeholder="Descreva sua necessidade" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>NB Usinagem | Ribeirão Pires - SP</p>
+        <p>WhatsApp: (11) 98636-6101 | E-mail: nbusinagem@gmail.com</p>
+    </footer>
+</body>
+</html>
