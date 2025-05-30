@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -5,22 +6,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>NB Usinagem</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <script>
+    function scrollToSection(id) {
+      document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
 </head>
 <body class="bg-gray-50 text-gray-800">
   <!-- Header -->
   <header class="bg-white shadow-md p-4 flex justify-between items-center">
-    <h1 class="text-2xl font-bold text-blue-900">NB Usinagem</h1>
+    <h1 class="text-2xl font-bold text-blue-900 cursor-pointer" onclick="scrollToSection('hero')">NB Usinagem</h1>
+    <nav class="space-x-4 hidden md:block">
+      <button onclick="scrollToSection('sobre')" class="hover:underline">Sobre</button>
+      <button onclick="scrollToSection('galeria')" class="hover:underline">Estrutura</button>
+      <button onclick="scrollToSection('servicos')" class="hover:underline">Serviços</button>
+      <button onclick="scrollToSection('orcamento')" class="hover:underline">Orçamento</button>
+      <button onclick="scrollToSection('contato')" class="hover:underline">Contato</button>
+    </nav>
     <a href="https://wa.me/5511986366101" class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">Fale conosco</a>
   </header>
 
   <!-- Hero -->
-  <section class="bg-blue-900 text-white text-center py-20">
+  <section id="hero" class="bg-blue-900 text-white text-center py-20">
     <h2 class="text-4xl font-bold mb-4">Precisão e Qualidade em Usinagem CNC</h2>
     <p class="max-w-2xl mx-auto text-lg">Somos especializados em torneamento CNC com foco em excelência, agilidade e compromisso com o cliente.</p>
   </section>
 
   <!-- Sobre -->
-  <section class="py-16 px-6 max-w-5xl mx-auto">
+  <section id="sobre" class="py-16 px-6 max-w-5xl mx-auto">
     <h3 class="text-3xl font-bold mb-4 text-center">Sobre a NB Usinagem</h3>
     <p class="text-lg text-center mb-8">A NB Usinagem é uma empresa de Ribeirão Pires - SP, fundada pelos sócios Bruno e Ney, dois profissionais apaixonados por engenharia e comprometidos com a qualidade. Atuamos no ramo de usinagem com foco em precisão, responsabilidade e satisfação do cliente. Nosso propósito é entregar peças com excelência e, ao mesmo tempo, melhorar a condição de vida das nossas famílias e da nossa equipe.</p>
     <div class="grid md:grid-cols-3 gap-6 text-center">
@@ -40,7 +53,7 @@
   </section>
 
   <!-- Galeria -->
-  <section class="bg-gray-100 py-16 px-6">
+  <section id="galeria" class="bg-gray-100 py-16 px-6">
     <h3 class="text-3xl font-bold text-center mb-10">Nossa Estrutura</h3>
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
       <img src="https://raw.githubusercontent.com/brunofranco1188/nbusinagem/main/nbusinagem_site_profissional_atualizado/oficina1.jpg" alt="Oficina NB Usinagem" class="rounded shadow hover:scale-105 transform transition">
@@ -52,7 +65,7 @@
   </section>
 
   <!-- Serviços -->
-  <section class="py-16 px-6 max-w-5xl mx-auto">
+  <section id="servicos" class="py-16 px-6 max-w-5xl mx-auto">
     <h3 class="text-3xl font-bold text-center mb-10">Serviços Oferecidos</h3>
     <ul class="grid sm:grid-cols-2 gap-6 text-lg">
       <li>🔩 Torneamento CNC de precisão</li>
@@ -65,14 +78,14 @@
   </section>
 
   <!-- Orçamento -->
-  <section class="bg-blue-50 py-16 px-6 text-center">
+  <section id="orcamento" class="bg-blue-50 py-16 px-6 text-center">
     <h3 class="text-3xl font-bold mb-6">Solicite um Orçamento</h3>
     <p class="text-lg mb-6">Entre em contato pelo WhatsApp clicando no botão abaixo ou envie um e-mail com seu projeto e dados para análise.</p>
     <a href="https://wa.me/5511986366101" class="inline-block bg-green-600 text-white px-6 py-3 rounded-lg text-lg hover:bg-green-700">Solicitar via WhatsApp</a>
   </section>
 
   <!-- Contato -->
-  <section class="py-16 px-6 text-center">
+  <section id="contato" class="py-16 px-6 text-center">
     <h3 class="text-3xl font-bold mb-4">Entre em Contato</h3>
     <p class="mb-4">WhatsApp: <a href="https://wa.me/5511986366101" class="text-blue-600 underline">(11) 98636-6101</a></p>
     <p class="mb-4">Email: <a href="mailto:nbusinagem@gmail.com" class="text-blue-600 underline">nbusinagem@gmail.com</a></p>
